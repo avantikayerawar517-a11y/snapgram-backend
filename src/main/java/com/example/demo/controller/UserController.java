@@ -17,9 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.entity.User;
 import com.example.demo.repository.UserRepository;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:5173") // Tujhya React app (Snapgram) la allow karnyasaathi
+//@CrossOrigin(origins = "http://localhost:5173") // Tujhya React app (Snapgram) la allow karnyasaathi
 public class UserController {
 
     @Autowired

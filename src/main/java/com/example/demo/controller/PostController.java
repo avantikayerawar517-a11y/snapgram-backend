@@ -16,9 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.entity.Post;
 import com.example.demo.repository.Postrepository;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/posts")
-@CrossOrigin(origins = "http://localhost:5173") // React la allow karnyasaathi
+//@CrossOrigin(origins = "http://localhost:5173") // React la allow karnyasaathi
 public class PostController {
 
     @Autowired

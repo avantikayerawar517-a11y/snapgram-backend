@@ -23,9 +23,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/storage")
-@CrossOrigin(origins = "http://localhost:5173") // React app la allow karnyasaathi
+//@CrossOrigin(origins = "http://localhost:5173") // React app la allow karnyasaathi
 public class StorageController {
 
     // Ya navacha folder aapo-aap tayar hoil jyat sagle photos save hotil
